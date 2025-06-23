@@ -31,6 +31,7 @@ contract ClaimChain {
     event ClaimRejected(uint256 indexed id);
     event ClaimSettled(uint256 indexed id, uint256 amount);
 
+
     constructor() {
         insurer = msg.sender;
     }
