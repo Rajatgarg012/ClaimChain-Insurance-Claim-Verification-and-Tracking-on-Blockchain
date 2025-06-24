@@ -24,7 +24,7 @@ contract ClaimChain {
     modifier onlyClaimant(uint256 id) {
         require(msg.sender == claims[id].claimant, "Only claimant can call this");
         _;
-    }
+     }
 
     event ClaimSubmitted(uint256 indexed id, address indexed claimant);
     event ClaimVerified(uint256 indexed id);
