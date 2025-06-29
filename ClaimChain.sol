@@ -19,7 +19,7 @@ contract ClaimChain {
     modifier onlyInsurer() {
         require(msg.sender == insurer, "Only insurer can call this");
         _;
-    }
+     }
 
     modifier onlyClaimant(uint256 id) {
         require(msg.sender == claims[id].claimant, "Only claimant can call this");
