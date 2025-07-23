@@ -60,7 +60,7 @@ contract ClaimChain {
         require(claims[id].status == ClaimStatus.Submitted, "Invalid status");
         claims[id].status = ClaimStatus.Rejected;
         emit ClaimRejected(id);
-    }
+     }
 
     function settleClaim(uint256 id) external payable onlyInsurer {
         Claim storage claim = claims[id];
