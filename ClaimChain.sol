@@ -17,7 +17,7 @@ contract ClaimChain {
     mapping(uint256 => Claim) public claims;
 
     modifier onlyInsurer() {
-        require(msg.sender == insurer, "Only insurer can call this");
+         require(msg.sender == insurer, "Only insurer can call this");
         _;
          }
 
