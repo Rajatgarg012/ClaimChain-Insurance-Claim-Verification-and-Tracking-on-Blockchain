@@ -8,7 +8,7 @@ contract ClaimChain {
         address claimant;
         string description;
         uint256 amount;
-        ClaimStatus status;
+         ClaimStatus status;
        }
 
     address public insurer;
