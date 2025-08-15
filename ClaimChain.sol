@@ -34,7 +34,7 @@ contract ClaimChain {
 
     constructor() {
         insurer = msg.sender;
-      }
+       }
  
     function submitClaim(string calldata description, uint256 amount) external returns (uint256) {
         require(amount > 0, "Invalid amount");
