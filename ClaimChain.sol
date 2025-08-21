@@ -9,8 +9,8 @@ contract ClaimChain {
         string description;
         uint256 amount;
          ClaimStatus status;
-          }
-
+           }
+ 
     address public insurer;
     uint256 public claimCount;
 
