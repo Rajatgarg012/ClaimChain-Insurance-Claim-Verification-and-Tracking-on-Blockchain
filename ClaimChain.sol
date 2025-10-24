@@ -2,7 +2,7 @@
 pragma solidity ^0.8.17;
 
 contract ClaimChain {
-    enum ClaimStatus { Submitted, Verified, Rejected, Settled }
+     enum ClaimStatus { Submitted, Verified, Rejected, Settled }
 
     struct Claim {
         address claimant;
